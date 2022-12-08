@@ -55,3 +55,6 @@ const posts = [
         "created": "2021-03-05"
     }
 ];
+
+// Create a const by id
+const container = document.getElementById('container')
