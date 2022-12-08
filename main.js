@@ -58,3 +58,7 @@ const posts = [
 
 // Create a const by id
 const container = document.getElementById('container')
+
+for (let i = 0; i < posts.length; i++){
+    
+}
