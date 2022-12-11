@@ -114,6 +114,10 @@ const likeCounters = document.querySelectorAll('.likes__counter')
 const likeList = []
 let evaluator = false
 
+// cycle for and event listner
+
 for (let i = 0; i < likeButtons.length; i++){
-    
+    likeButtons[i].addEventListener("click", function () {
+
+    })
 }
