@@ -119,6 +119,8 @@ let evaluator = false
 for (let i = 0; i < likeButtons.length; i++){
     likeButtons[i].addEventListener("click", function () {
         if (!evaluator) {
+            likeButtons[i].classList.add("like-button--liked");
+            likeList.push(posts[i].id);
 
         }
     })
