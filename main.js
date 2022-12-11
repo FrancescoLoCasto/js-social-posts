@@ -38,7 +38,7 @@ const posts = [
         "media": "https://unsplash.it/600/400?image=24",
         "author": {
             "name": "Luca Formicola",
-            "image": "https://unsplash.it/300/300?image=23"
+            "image": null
         },
         "likes": 56,
         "created": "2021-04-03"
@@ -125,7 +125,11 @@ for (let i = 0; i < likeButtons.length; i++){
             likeCounters[i].innerHTML = `Piace a <b id="like-counter-1" class="js-likes-counter">${posts[i].likes}</b> persone`
             evaluator = true
         } else {
-
+            likeButtons[i].classList.remove("like-button--liked");
+            likeList.pop(posts[i].id);
+            posts[i].likes = posts[i].likes - 1;
+            likeCounters[i].innerHTML = `Piace a <b id="like-counter-1" class="js-likes-counter">${posts[i].likes}</b> persone`
+            evaluator = false
         }
     })
 }
