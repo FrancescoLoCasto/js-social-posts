@@ -133,3 +133,5 @@ for (let i = 0; i < likeButtons.length; i++){
         }
     })
 }
+
+// Milestone 2 complete 
