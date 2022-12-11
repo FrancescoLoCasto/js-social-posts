@@ -121,6 +121,10 @@ for (let i = 0; i < likeButtons.length; i++){
         if (!evaluator) {
             likeButtons[i].classList.add("like-button--liked");
             likeList.push(posts[i].id);
+            posts[i].likes += 1;
+            likeCounters[i].innerHTML = `Piace a <b id="like-counter-1" class="js-likes-counter">${posts[i].likes}</b> persone`
+            evaluator = true
+        } else {
 
         }
     })
