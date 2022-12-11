@@ -113,3 +113,7 @@ const likeButtons = document.querySelectorAll("a.like-button")
 const likeCounters = document.querySelectorAll('.likes__counter')
 const likeList = []
 let evaluator = false
+
+for (let i = 0; i < likeButtons.length; i++){
+    
+}
